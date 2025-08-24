@@ -3,15 +3,33 @@ DAG scheduling experiments in Google Colab using forms for parameterized inputs.
 
 
 
-# DAG Scheduling Experiments in Google Colab
+# Gang-Task Scheduling and Response-Time Analysis (Colab Experiment)
 
-This repository contains experiments on Directed Acyclic Graph (DAG) scheduling and real-time simulation using Google Colab forms for parameterized inputs.
+This project is a Colab-based research demo inspired by Prof. Shareef Ahmed’s recent RTAS’25 paper “Scheduling Processing Graphs of Gang Tasks on Heterogeneous Platforms.”
+The notebook implements a mini experimental framework to simulate and analyze gang-task scheduling on heterogeneous CPU–GPU systems.
 
-## Features
-- DAG generation and visualization
-- Parameterized experiments via Colab Forms
-- Simulation of scheduling with utilization sweeps
-- Real-time analysis with Python
+## 🔑 Key Features
+
+--Synthetic DAG Generation: Randomly generates gang-task DAGs with CPU/GPU execution demands.
+
+--Scheduling Simulation: Implements both Work-Conserving (WC) and Semi-Work-Conserving (SWC) schedulers.
+
+--Response-Time Analysis (RTA): Computes theoretical completion bounds for task graphs.
+
+--Case Study Setup (ResNet18): Prepares for CNN workloads by treating model layers as gang tasks, measured on CPU/GPU in PyTorch.
+
+--Visualization: Histograms comparing WC vs SWC schedulers, utilization curves, and execution timelines.
+
+----
+📊 Example Results
+
+->WC scheduler consistently yields lower makespan compared to SWC across random DAG workloads.
+
+->For small DAGs (10–20 nodes), the framework completes in milliseconds, allowing rapid experimentation.
+
+->Supports scalability tests (100+ DAGs) for utilization vs schedulability analysis.
+#Note on Case Study (ResNet18):
+This notebook currently focuses on synthetic DAG experiments for clarity and runtime efficiency. A CNN-based case study (e.g., ResNet18) was considered, where each layer would be treated as a gang-task node with measured CPU/GPU execution times. However, this adds significant runtime overhead in Colab. The current framework is fully extensible to this case study: one can simply replace the synthetic DAG generator with a ResNet-derived DAG, assign per-layer timings, and run the same RTA + scheduling experiments.
 
 ## Files
 - `dag_experiments.ipynb` → Main Google Colab Notebook
@@ -20,7 +38,7 @@ This repository contains experiments on Directed Acyclic Graph (DAG) scheduling 
 
 ---
 
-## 📊 Example Results
+## 📊 Figurative Results:
 
 Here are five key results generated from the notebook:
 
@@ -44,11 +62,25 @@ Here are five key results generated from the notebook:
 
 
 ---
+##🎯 Motivation
 
+This project demonstrates a practical entry point into real-time systems research by bridging:
 
+Theory → Response-Time Analysis of gang-task DAGs.
 
-## Running the Notebook
-1. Open in Google Colab:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([[https://colab.research.google.com/github/YOUR_USERNAME/colab-dag-scheduling-experiments/blob/main/dag_experiments.ipynb](https://colab.research.google.com/drive/1Hh5LsiFfzbGMj5TgNjQcx5hA4YXOxZ3i?authuser=6#scrollTo=9c23ecf5)](https://colab.research.google.com/drive/1Hh5LsiFfzbGMj5TgNjQcx5hA4YXOxZ3i?usp=sharing))
-2. Adjust parameters via forms.
-3. Run experiments and visualize results.
+Practice → Lightweight CNN case study (ResNet18 layer-wise DAG).
+
+Experimentation → Simulation framework to explore heterogeneous scheduling policies.
+---
+
+##📌 Next Steps
+
+Extend case study with ResNet18 layer timings on CPU vs GPU in Colab.
+
+Compare RTA-derived bounds with measured CNN execution traces.
+
+Explore federated scheduling extensions for multiple DAGs.
+---
+##📑 Citation
+
+Ahmed, Shareef. “Scheduling Processing Graphs of Gang Tasks on Heterogeneous Platforms.” RTAS 2025.
