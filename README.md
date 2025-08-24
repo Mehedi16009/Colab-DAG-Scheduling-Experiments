@@ -25,8 +25,7 @@ This repository contains experiments on Directed Acyclic Graph (DAG) scheduling 
 Here are five key results generated from the notebook:
 
 ### 1. Custom Sweep (High Resolution)
-[Custom Sweep](<img width="702" height="610" alt="custom_sweep_high_res" src="https://github.com/user-attachments/assets/33894f0a-0b94-4305-8a21-0d746d2f6d4a" />
-)
+<img width="702" height="610" alt="custom_sweep_high_res" src="https://github.com/user-attachments/assets/33894f0a-0b94-4305-8a21-0d746d2f6d4a" />
 
 ### 2. One-Shot Gantt Chart
 ![One-Shot Gantt](<img width="702" height="610" alt="one_shot_gantt_high_res" src="https://github.com/user-attachments/assets/f3bd2174-fc13-43a1-9b09-72ad2a3d288a" />
