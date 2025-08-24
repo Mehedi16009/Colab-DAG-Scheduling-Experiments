@@ -25,23 +25,23 @@ This repository contains experiments on Directed Acyclic Graph (DAG) scheduling 
 Here are five key results generated from the notebook:
 
 ### 1. Custom Sweep (High Resolution)
-<img width="702" height="610" alt="custom_sweep_high_res" src="https://github.com/user-attachments/assets/33894f0a-0b94-4305-8a21-0d746d2f6d4a" />
+<img width="702" height="410" alt="custom_sweep_high_res" src="https://github.com/user-attachments/assets/33894f0a-0b94-4305-8a21-0d746d2f6d4a" />
 
 ### 2. One-Shot Gantt Chart
-![One-Shot Gantt](<img width="702" height="610" alt="one_shot_gantt_high_res" src="https://github.com/user-attachments/assets/f3bd2174-fc13-43a1-9b09-72ad2a3d288a" />
-)
+<img width="702" height="410" alt="one_shot_gantt_high_res" src="https://github.com/user-attachments/assets/f3bd2174-fc13-43a1-9b09-72ad2a3d288a" />
+
 
 ### 3. Random DAG Example
-![Random DAG](<img width="702" height="610" alt="random_dag_high_res" src="https://github.com/user-attachments/assets/2dcb8078-53f3-4561-add1-f7d034c71042" />
-)
+<img width="702" height="410" alt="random_dag_high_res" src="https://github.com/user-attachments/assets/2dcb8078-53f3-4561-add1-f7d034c71042" />
+
 
 ### 4. Schedulability Sweep
-![Schedulability Sweep](<img width="702" height="610" alt="schedulability_sweep_high_res" src="https://github.com/user-attachments/assets/fd0126b0-ff64-4059-a28a-3e008c56da76" />
-)
+<img width="702" height="410" alt="schedulability_sweep_high_res" src="https://github.com/user-attachments/assets/fd0126b0-ff64-4059-a28a-3e008c56da76" />
+
 
 ### 5. Work-Conserving Gantt Chart
-![Work-Conserving Gantt](<img width="702" height="610" alt="work_conserving_gantt_high_res" src="https://github.com/user-attachments/assets/40f45f5c-0734-408b-9928-c2c9668c3862" />
-)
+<img width="702" height="410" alt="work_conserving_gantt_high_res" src="https://github.com/user-attachments/assets/40f45f5c-0734-408b-9928-c2c9668c3862" />
+
 
 ---
 
