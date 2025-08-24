@@ -49,6 +49,6 @@ Here are five key results generated from the notebook:
 
 ## Running the Notebook
 1. Open in Google Colab:
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/YOUR_USERNAME/colab-dag-scheduling-experiments/blob/main/dag_experiments.ipynb](https://colab.research.google.com/drive/1Hh5LsiFfzbGMj5TgNjQcx5hA4YXOxZ3i?authuser=6#scrollTo=9c23ecf5))
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([[https://colab.research.google.com/github/YOUR_USERNAME/colab-dag-scheduling-experiments/blob/main/dag_experiments.ipynb](https://colab.research.google.com/drive/1Hh5LsiFfzbGMj5TgNjQcx5hA4YXOxZ3i?authuser=6#scrollTo=9c23ecf5)](https://colab.research.google.com/drive/1Hh5LsiFfzbGMj5TgNjQcx5hA4YXOxZ3i?usp=sharing))
 2. Adjust parameters via forms.
 3. Run experiments and visualize results.
