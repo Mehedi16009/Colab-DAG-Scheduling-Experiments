@@ -28,6 +28,7 @@ The notebook implements a mini experimental framework to simulate and analyze ga
 ->For small DAGs (10–20 nodes), the framework completes in milliseconds, allowing rapid experimentation.
 
 ->Supports scalability tests (100+ DAGs) for utilization vs schedulability analysis.
+---
 #Note on Case Study (ResNet18):
 This notebook currently focuses on synthetic DAG experiments for clarity and runtime efficiency. A CNN-based case study (e.g., ResNet18) was considered, where each layer would be treated as a gang-task node with measured CPU/GPU execution times. However, this adds significant runtime overhead in Colab. The current framework is fully extensible to this case study: one can simply replace the synthetic DAG generator with a ResNet-derived DAG, assign per-layer timings, and run the same RTA + scheduling experiments.
 
@@ -84,3 +85,13 @@ Explore federated scheduling extensions for multiple DAGs.
 ##📑 Citation
 
 Ahmed, Shareef. “Scheduling Processing Graphs of Gang Tasks on Heterogeneous Platforms.” RTAS 2025.
+---
+##📬 Contact:
+
+Developed by Md Mehedi Hasan
+
+Email: [mehedi.hasan.ict@mbstu.ac.bd](mehedi.hasan.ict@mbstu.ac.bd) | [mehedi.hasan.ict13@gmail.com](mehedi.hasan.ict13@gmail.com)
+
+Phone: +8801789113669 | [+8801334110929](+8801334110929)
+
+Institution: [GIIT University / IdeaVerse / MBSTU]
